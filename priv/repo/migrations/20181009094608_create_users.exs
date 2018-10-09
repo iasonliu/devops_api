@@ -5,6 +5,7 @@ defmodule DevopsApi.Repo.Migrations.CreateUsers do
     create table(:users) do
       add(:first_name, :string)
       add(:last_name, :string)
+      add(:name, :string)
       add(:email, :string)
       add(:password_hash, :string)
       add(:role, :string)
