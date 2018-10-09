@@ -14,8 +14,7 @@ config :devops_api, DevopsApiWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "M/OWI0N/xQsKd7GT2CGZjj/Cx3E2aLzDGyzvhWXeTCBPi9BioztJsDKkGavwprx0",
   render_errors: [view: DevopsApiWeb.ErrorView, accepts: ~w(json)],
-  pubsub: [name: DevopsApi.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: DevopsApi.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -24,4 +23,4 @@ config :logger, :console,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"
