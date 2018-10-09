@@ -40,7 +40,10 @@ defmodule DevopsApi.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:comeonin, "~> 4.0"},
-      {:argon2_elixir, "~> 1.3"}
+      {:argon2_elixir, "~> 1.3"},
+      {:absinthe, "~> 1.4"},
+      {:absinthe_plug, "~> 1.4"},
+      {:absinthe_ecto, "~> 0.1.3"}
     ]
   end
 
