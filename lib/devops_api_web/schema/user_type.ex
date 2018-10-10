@@ -1,4 +1,4 @@
-defmodule DevopsApiWeb.Schema.Types.Usertype do
+defmodule DevopsApiWeb.Schema.Types.UserType do
   use Absinthe.Schema.Notation
 
   object :user_type do
