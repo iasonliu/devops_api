@@ -21,6 +21,11 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:user_id]
 
+# Guardian config details
+config :devops_api, DevopsApi.Guardian,
+  issuer: "devops_api",
+  secret_key: "dA9H4EKeGRX9Fw0mZLK2CQWd1XaDAF8aoetuUC2WrRLFLQZR67edRQajC+pLKl4J"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
