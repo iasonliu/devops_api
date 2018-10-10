@@ -3,6 +3,7 @@ defmodule DevopsApiWeb.Router do
 
   pipeline :api do
     plug(:accepts, ["json"])
+    plug(DevopsApiWeb.Plugs.Context)
   end
 
   scope "/api" do
